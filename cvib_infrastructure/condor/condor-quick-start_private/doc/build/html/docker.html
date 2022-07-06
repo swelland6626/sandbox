@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Docker &mdash; condor-quick-start  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Example" href="example.html" />
+    <link rel="prev" title="Condor" href="condor.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> condor-quick-start
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="condor.html">Condor</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Docker</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-docker">What is Docker?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-dockerfile">Creating a Dockerfile</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dockerfile-examples">Dockerfile Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#building-a-docker-container">Building a Docker Container</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#useful-commands">Useful commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="example.html">Example</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">condor-quick-start</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Docker</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/docker.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="docker">
+<h1>Docker<a class="headerlink" href="#docker" title="Permalink to this headline"></a></h1>
+<section id="what-is-docker">
+<h2>What is Docker?<a class="headerlink" href="#what-is-docker" title="Permalink to this headline"></a></h2>
+<p>Docker is a tool for building and using software based on the concept of packaging
+code and it’s dependencies into a single unit using containers and images.
+Containers are the single units that run the code inside of them and contain all
+the dependencies needed to do so. Images are like snapshots of the contents of the
+container that get saved for building new containers similar to the current one.</p>
+<p>The special characteristic of containers though is that they don’t make
+permanent changes to anything outside the container, i.e. to the image. So
+whatever happens inside the container is gone after the container is exited.
+However, a container no longer running has state and can be saved to
+an image for future use (this is sort of what happens between layers in a container).</p>
+</section>
+<section id="creating-a-dockerfile">
+<h2>Creating a Dockerfile<a class="headerlink" href="#creating-a-dockerfile" title="Permalink to this headline"></a></h2>
+<p>Docker images are built using Dockerfiles which contain ‘layers’. Each instruction
+in a Dockerfile creates a new layer. Common instructions in a
+Dockerfile are described below (convention is for instructions to be uppercase to distinguish them
+from arguments/commands):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">FROM</span></code>: Specifies parent image you want to build your image from (the first command in a Dockerfile <strong>must</strong> be <code class="docutils literal notranslate"><span class="pre">FROM</span></code>; comments and args used in <code class="docutils literal notranslate"><span class="pre">FROM</span></code> are an exception).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PULL</span></code>: Adds files from Docker repository.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">RUN</span></code>: Executes commands in layers above and commits them for the container built from the next layer. <code class="docutils literal notranslate"><span class="pre">RUN</span></code> has 2 forms: a shell form (terminal) and an exec form (inside the Dockerfile).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">COPY</span></code>: Copies new files, directories, or remote URLs from <code class="docutils literal notranslate"><span class="pre">&lt;src&gt;</span></code> and adds them to the filesystem of the image path <code class="docutils literal notranslate"><span class="pre">&lt;dest&gt;</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CMD</span></code>: Specifies the command to run in the container. There can only be <strong>one</strong> <code class="docutils literal notranslate"><span class="pre">CMD</span></code> instruction in a Dockerfile.</p></li>
+</ul>
+<p>See below for more detailed Docker documentation:</p>
+<ul>
+<li><p>Dockerfile reference:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://docs.docker.com/engine/reference/builder/">https://docs.docker.com/engine/reference/builder/</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Specific documentation on <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">build</span></code>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://docs.docker.com/engine/reference/commandline/build/">https://docs.docker.com/engine/reference/commandline/build/</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Specific documentation on <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span></code>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://docs.docker.com/engine/reference/run/">https://docs.docker.com/engine/reference/run/</a></p></li>
+<li><p><a class="reference external" href="https://docs.docker.com/engine/reference/commandline/run/">https://docs.docker.com/engine/reference/commandline/run/</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Dockerfile writing tips:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://docs.docker.com/develop/develop-images/dockerfile_best-practices/">https://docs.docker.com/develop/develop-images/dockerfile_best-practices/</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<section id="dockerfile-examples">
+<h3>Dockerfile Examples<a class="headerlink" href="#dockerfile-examples" title="Permalink to this headline"></a></h3>
+<p>A simple Dockerfile:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># uses tensorflow/tensorflow:2.6.0-gpu-jupyter as the parent image to build the container</span>
+FROM tensorflow/tensorflow:2.6.0-gpu-jupyter
+
+<span class="c1"># upgrades the pip installer</span>
+RUN python -m pip install --upgrade pip
+
+<span class="c1"># requirements.txt is a file containing dependencies to install inside the container</span>
+<span class="c1"># copies requirements.txt into the container, the &quot; .&quot; at the end specifies to copy it to the current directory</span>
+COPY requirements.txt .
+
+<span class="c1"># uses the pip installer to install the contents (dependencies) of requirements</span>
+RUN pip install -r requirements.txt
+</pre></div>
+</div>
+</div></blockquote>
+<p>The Dockerfile above is used to run a cycleGAN machine learning model built
+using tensorflow and utilizes tensorboard for performance monitoring. To run the
+Dockerfile, the following command is used from a terminal:
+<code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-it</span> <span class="pre">-v</span> <span class="pre">$PWD:/workdir</span> <span class="pre">-w</span> <span class="pre">/workdir</span> <span class="pre">-v</span> <span class="pre">/radraid:/radraid</span> <span class="pre">-u</span> <span class="pre">$(id</span> <span class="pre">-u):$(id</span> <span class="pre">-g)</span> <span class="pre">-p</span> <span class="pre">6006:6006</span> <span class="pre">cyclegan-ct-abdomen</span> <span class="pre">bash</span></code>.
+This will activate a bash shell that you can then use to cd into other directories
+within the directory the Dockerfile was ran in, run the model, etc. See the second
+link under <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span></code> in the Creating a Dockerfile section above for more details on <code class="docutils literal notranslate"><span class="pre">run</span></code> usage from the command line.</p>
+<p>A more complex Dockerfile:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>FROM sphinxdoc/sphinx-latexpdf
+<span class="c1"># FROM sphinxdoc/sphinx</span>
+
+ARG <span class="nv">MYPATH</span><span class="o">=</span>/usr/local
+ARG <span class="nv">MYLIBPATH</span><span class="o">=</span>/usr/lib
+
+RUN apt-get update <span class="o">&amp;&amp;</span> apt-get install -y --no-install-recommends <span class="se">\</span>
+      autotools-dev <span class="se">\</span>
+      build-essential <span class="se">\</span>
+      ca-certificates <span class="se">\</span>
+      cmake <span class="se">\</span>
+      git <span class="se">\</span>
+      wget <span class="se">\</span>
+      curl <span class="se">\</span>
+      vim
+RUN rm -rf /var/lib/apt/lists/*
+
+<span class="c1"># install miniconda.</span>
+<span class="c1"># create and activate python virtual env with desired version</span>
+RUN wget --quiet --no-check-certificate https://repo.continuum.io/miniconda/Miniconda3-4.6.14-Linux-x86_64.sh --no-check-certificate -O ~/miniconda.sh <span class="o">&amp;&amp;</span> <span class="se">\</span>
+   /bin/bash ~/miniconda.sh -b -p /opt/conda
+RUN /opt/conda/bin/conda create -n py <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.7.2
+RUN <span class="nb">echo</span> <span class="s2">&quot;source /opt/conda/bin/activate py&quot;</span> &gt; ~/.bashrc
+ENV PATH /opt/conda/envs/py/bin:<span class="nv">$PATH</span>
+RUN /bin/bash -c <span class="s2">&quot;source /opt/conda/bin/activate py&quot;</span>
+
+RUN /bin/bash -c <span class="s2">&quot;source /opt/conda/bin/activate py &amp;&amp; conda install cython numpy -y &amp;&amp; pip install scikit-build &amp;&amp; pip install matplotlib&quot;</span>
+RUN /bin/bash -c <span class="s2">&quot;source /opt/conda/bin/activate py &amp;&amp; conda install -c conda-forge jupyterlab -y&quot;</span>
+RUN /bin/bash -c <span class="s2">&quot;source /opt/conda/bin/activate py &amp;&amp; conda install -c conda-forge nbsphinx -y&quot;</span>
+
+RUN pip install sphinx-rtd-theme numpydoc sphinx-copybutton
+<span class="c1"># RUN pip install ipywidgets matplotlib medpy opencv-python plotly tabulate</span>
+<span class="c1"># RUN pip install tensorflow pandas scikit-image pydicom</span>
+
+<span class="c1"># ARG UNAME=testuser</span>
+<span class="c1"># ARG UID=1000</span>
+<span class="c1"># ARG GID=1000</span>
+<span class="c1"># RUN groupadd -g $GID -o $UNAME</span>
+<span class="c1"># RUN useradd -l -m -u $UID -g $GID -o -s /bin/bash $UNAME &amp;&amp; \</span>
+<span class="c1">#     usermod -aG sudo $UNAME</span>
+<span class="c1"># RUN echo &#39;%sudo ALL=(ALL) NOPASSWD:ALL&#39; &gt;&gt; /etc/sudoers</span>
+<span class="c1"># USER $UNAME</span>
+
+<span class="c1"># CMD /bin/bash</span>
+</pre></div>
+</div>
+</div></blockquote>
+</section>
+</section>
+<section id="building-a-docker-container">
+<h2>Building a Docker Container<a class="headerlink" href="#building-a-docker-container" title="Permalink to this headline"></a></h2>
+<p>Once the Dockerfile is written and you’re ready to use it/run your scripts, the
+Docker container must be built and launched. For CVIB, you will also want to push the
+container to the CVIB registry which is a private hub for saved/committed Docker images.</p>
+<p>For practice, create a directory inside your personal directory called ‘sandbox’ , cd into it
+and make a new file called “hello.py” and write the following code inside:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>import sys,os
+import imageio
+import numpy as np
+
+<span class="nv">image_path</span> <span class="o">=</span> sys.argv<span class="o">[</span><span class="m">1</span><span class="o">]</span>
+<span class="nv">output_path</span> <span class="o">=</span> sys.argv<span class="o">[</span><span class="m">2</span><span class="o">]</span>
+
+os.makedirs<span class="o">(</span>os.path.dirname<span class="o">(</span>os.path.abspath<span class="o">(</span>output_path<span class="o">))</span>,exist_ok<span class="o">=</span>True<span class="o">)</span>
+
+<span class="nv">a</span> <span class="o">=</span> imageio.imread<span class="o">(</span>image_path<span class="o">)</span>
+
+with open<span class="o">(</span>output_path,<span class="s1">&#39;w&#39;</span><span class="o">)</span> as f:
+   f.write<span class="o">(</span>str<span class="o">(</span>np.sum<span class="o">(</span>a<span class="o">))</span>+<span class="s1">&#39;\n&#39;</span><span class="o">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Create another file saved as “hello.sh” and write the following code inside:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="nb">export</span> <span class="nv">url</span><span class="o">=</span><span class="nv">$1</span>
+<span class="nb">export</span> <span class="nv">outputpath</span><span class="o">=</span><span class="nv">$2</span>
+
+wget <span class="nv">$url</span> -O image.png
+python hello.py image.png <span class="nv">$outputpath</span>
+cat <span class="nv">$outputpath</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Create another file saved as requirements.txt and write the following code inside:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tensorflow
+keras
+numpy
+</pre></div>
+</div>
+</div></blockquote>
+<p>Create another file saved as ‘Dockerfile’ (don’t use any file extension) and write the following code inside:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>FROM tensorflow/tensorflow:2.6.0-gpu-jupyter
+
+RUN apt-get -yq update<span class="p">;</span>apt-get install -yq vim wget
+RUN pip3 install <span class="nv">imageio</span><span class="o">==</span><span class="m">2</span>.6.0
+
+WORKDIR /opt
+COPY hello.py .
+COPY hello.sh .
+
+COPY requirements.txt .
+RUN pip3 install -r requirements.txt
+</pre></div>
+</div>
+</div></blockquote>
+<p>Finally, run the following commands in a terminal to launch the container you made and test it out.</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># login to CVIB registry</span>
+docker login registry.cvib.ucla.edu
+
+<span class="c1"># build image</span>
+docker build -t hello-tf .
+
+<span class="c1"># test the container using interactive mode</span>
+docker run -it --privileged  hello-tf /bin/bash
+/bin/bash hello.sh https://i.stack.imgur.com/Ds5Rc.png results.txt
+<span class="nb">exit</span>
+
+<span class="c1"># push the container to the CVIB registry</span>
+docker tag hello-tf:latest registry.cvib.ucla.edu/<span class="nv">$USER</span>:hello-tf
+docker push registry.cvib.ucla.edu/<span class="nv">$USER</span>:hello-tf
+
+<span class="c1"># run the container</span>
+docker run -v <span class="nv">$PWD</span>:/out registry.cvib.ucla.edu/<span class="nv">$USER</span>:hello-tf /bin/bash hello.sh https://i.stack.imgur.com/Ds5Rc.png /out/results.txt
+cat results.txt
+</pre></div>
+</div>
+</div></blockquote>
+</section>
+<section id="useful-commands">
+<h2>Useful commands<a class="headerlink" href="#useful-commands" title="Permalink to this headline"></a></h2>
+<p>Some useful terminal commands in case you run into issues where you close a terminal
+without exiting the docker container. Doing so will result in an error message that
+says something about the port already being allocated.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">image</span> <span class="pre">ls</span></code>: lists all docker containers and their IDs</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">rmi</span> <span class="pre">-f</span> <span class="pre">container-id</span></code>: removes a running docker image</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">exec</span></code>: runs a command inside a a running container (similar to <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">exec</span> <span class="pre">-it</span> <span class="pre">[container-id]</span> <span class="pre">bash</span></code>: enters an already running docker</p></li>
+</ul>
+<p>When inside a container, <code class="docutils literal notranslate"><span class="pre">exit</span></code> or the keystroke <code class="docutils literal notranslate"><span class="pre">ctrl+d</span></code> will exit the docker.</p>
+<p>Use a <code class="docutils literal notranslate"><span class="pre">.dockerignore</span></code> file to exclude files from the container build. Usage is
+similar to a <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> file.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="condor.html" class="btn btn-neutral float-left" title="Condor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="example.html" class="btn btn-neutral float-right" title="Example" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, CVIB.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

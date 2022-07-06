@@ -1,0 +1,5 @@
+**/__pycache__/*
+model-0/saved_model/*
+model-0/joblog/*
+model-0/log/*
+model-0/static/*

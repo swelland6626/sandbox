@@ -1,0 +1,1000 @@
+  360  ls -lrt
+  361  cd /scratch/wasil/env/etc/profile.d
+  362  ls
+  363  cd ..
+  364  ls
+  365  cd ..
+  366  ls
+  367  ls -lrt
+  368  cd envs/
+  369  ls -lrt
+  370  cd deep_med/
+  371  ls
+  372  cd bin
+  373  ls
+  374  cd cd ..
+  375  cat /radraid/apps/personal/youngwon/miu_prostate_organ/inhouse_10042/ga_experiments/run_ga.sh 
+  376  ource /scratch/wasil/env/etc/profile.d/conda.shlls
+  377  source /scratch/wasil/env/etc/profile.d/conda.sh
+  378  conda activate deep_med
+  379  python /cvib2/apps/personal/swelland/lib/qia/latest/src/qia/ga/ga_ckp_unpickler.py
+  380  cp /radraid/apps/personal/youngwon/miu_prostate_organ/inhouse_10042/ga_experiments/ga_prostate_v1/ga_checkpoint/ga_3_0.pk /cvib2/apps/personal/wasil/lib/qia/qia_latest/ga/data/nodule/checkpoint/ga_3_0_yw.pk
+  381  ls /cvib2/apps/personal/wasil/lib/qia/qia_latest/ga/data/nodule/checkpoint/ga_3_0_yw.pk
+  382  python /cvib2/apps/personal/swelland/lib/qia/latest/src/qia/ga/ga_ckp_unpickler.py
+  383  cd /cvib2
+  384  ls
+  385  cd apps/personal
+  386  ls
+  387  cd zells
+  388  ls
+  389  cd code
+  390  ls
+  391  cd QIA
+  392  ls
+  393  cd latest
+  394  ls
+  395  cd
+  396  cd /cvib2
+  397  ls
+  398  cd apps
+  399  ls
+  400  cd personal
+  401  ls
+  402  cd swelland
+  403  ls
+  404  cd lib
+  405  ls
+  406  cd QIA
+  407  ls
+  408  cd ..
+  409  ls
+  410  cd qia
+  411  ls
+  412  cd latest
+  413  ls
+  414  cd src
+  415  ls
+  416  cd qia
+  417  ls
+  418  cd ga
+  419  ls
+  420  python ga_ckp_unpickler.py
+  421  cd /cvib2/apps/personal/swelland
+  422  ls
+  423  cd lib
+  424  ls
+  425  cd qia
+  426  ls
+  427  cd latest
+  428  ls
+  429  cd ga
+  430  ls
+  431  cd
+  432  /cvib2/apps/personal/wasil/lib/qia/qia_latest/ga
+  433  cd /cvib2/apps/personal/wasil/lib/qia/qia_latest/ga
+  434  python read_results_cli.py
+  435  cd
+  436  cd /cvib2/apps/personal/swelland
+  437  ls
+  438  cd lib/latest
+  439  cd lib
+  440  ls
+  441  cd qia/latest
+  442  ls
+  443  cd ga
+  444  ls
+  445  cd sandbox
+  446  ls
+  447  cd .. ..
+  448  ls
+  449  cd .. cd ..
+  450  cd ..
+  451  ls
+  452  cd .
+  453  cd ..
+  454  ls
+  455  cd src
+  456  ls
+  457  cd qia
+  458  ls
+  459  cd ga
+  460  ls
+  461  python ga_ckp_unpickler.py
+  462  /usr/bin/python3 /cvib2/apps/personal/gabriel/feedback_loop_stuff/mr_reverso_3000/vgg19.py
+  463  cd .. cd .. cd ..
+  464  cd ..
+  465  ls
+  466  mkdir sandbox
+  467  ls
+  468  cd sandbox
+  469  ls
+  470  python
+  471  ls
+  472  rm 'Untitled-1.py'
+  473  ls
+  474  cd ..
+  475  ls
+  476  cd ..
+  477  ls
+  478  cd qia
+  479  ls
+  480  cd latest
+  481  ls
+  482  cd src
+  483  ls
+  484  cd qia
+  485  ls
+  486  cd ga
+  487  ls
+  488  cd
+  489  cd /cvib2
+  490  ls
+  491  cd apps
+  492  ls
+  493  cd personal
+  494  ls
+  495  cd swelland
+  496  ls
+  497  cd sandbox
+  498  ls
+  499  cd ..
+  500  ls
+  501  cd lib
+  502  ls
+  503  cd qia
+  504  ls
+  505  cd latest
+  506  ls
+  507  cd src
+  508  ls
+  509  cd qia
+  510  ls
+  511  cd ga
+  512  ls
+  513  cd .. cd .. cd ..
+  514  cd ..
+  515  ld
+  516  ls
+  517  cd ga
+  518  ls
+  519  cd sandbox
+  520  ls
+  521  cd ..
+  522  ld
+  523  ls
+  524  cd src
+  525  ls
+  526  cd qia
+  527  ls
+  528  cd pipeline
+  529  ls
+  530  cd ..
+  531  ls
+  532  cd ga
+  533  ls
+  534  cd sandbox
+  535  cd ..
+  536  ls
+  537  cd ga
+  538  ls
+  539  cd sandbox
+  540  ls
+  541  cd ..
+  542  ls
+  543  cd src
+  544  ls
+  545  cd qia
+  546  ls
+  547  cd ga
+  548  ls
+  549  cd ..
+  550  ls
+  551  cd ga
+  552  ls
+  553  cd sansbox
+  554  ls
+  555  cd sandbox
+  556  ls
+  557  cd ..
+  558  ls
+  559  cd sandbox
+  560  ls
+  561  del basic_gan.py
+  562  rmv basic_gan.py
+  563  python
+  564  rmdir(/cvib2/apps/personal/swelland/sandbox/basic_gan.py)
+  565  python
+  566  ls
+  567  mkdir cyclegan
+  568  ls
+  569  cd cyclegan
+  570  ls
+  571  cd
+  572  ls
+  573  cd
+  574  cd /cvib2/apps/personal/swelland/sandbox
+  575  ls
+  576  cd ..
+  577  ls
+  578  cd ..
+  579  ls
+  580  cd ..
+  581  ls
+  582  cd sandbox
+  583  ls
+  584  rm train_list.csv
+  585  ls
+  586  rm train_list.csv
+  587  ls
+  588  mkdir inputs
+  589  cd inputs/
+  590  pwd
+  591  cd ..
+  592  ls
+  593  pwd
+  594  mkdir model_weights
+  595  pwd
+  596  mkdir working
+  597  conda deactivate
+  598  python /cvib2/apps/personal/swelland/sandbox/vgg19.py
+  599  conda activate base
+  600  conda activate deep_med
+  601  python /cvib2/apps/personal/swelland/sandbox/vgg19.py
+  602  clear
+  603  python /cvib2/apps/personal/swelland/sandbox/vgg19.py
+  604  conda deactivate
+  605  python /cvib2/apps/personal/swelland/sandbox/vgg19.py
+  606  conda activate gaby_env
+  607  python /cvib2/apps/personal/swelland/sandbox/vgg19.py
+  608  clear
+  609  conda deactivate
+  610  conda activate deep_med
+  611  python /cvib2/apps/personal/swelland/sandbox/vgg19.py
+  612  ls
+  613  mkdir miu
+  614  ls
+  615  cd miu
+  616  ls
+  617  cd .
+  618  cd ..
+  619  ls
+  620  mv miu_train.sh miu
+  621  cd miu
+  622  ls
+  623  cd kidney_model.1/
+  624  ls
+  625  docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  626  htop
+  627  cd miu
+  628  cd sandbox/MI
+  629  cd sandbox/miu/
+  630  ls
+  631  mkdir out
+  632  pwd
+  633  ls
+  634  pwd
+  635  cd ../..
+  636  ls
+  637  cd lib/qia/latest/
+  638  ls
+  639  git checkout
+  640  git branch
+  641  git checkout miu
+  642  git branch
+  643  git restore src/qia/ga/ga.py
+  644  git checkout miu
+  645  git pull --rebase
+  646  git brance
+  647  git branch
+  648  git checkout miu
+  649  clear
+  650  git branch
+  651  git checkout miu
+  652  git pull
+  653  git pull --rebase
+  654  git reset -hard
+  655  git reset --hard
+  656  git branch
+  657  git checkout miu
+  658  git branch
+  659  git pull
+  660  git branch
+  661  git reset --hard
+  662  git branch
+  663  git pull
+  664  git pull --rebase
+  665  git branch
+  666  git reset --hard
+  667  git pull
+  668  git checkout 31-tensorboard-based-dashboard-for-ga-performance
+  669  git restore bin/miu/miu
+  670  git reset bin/miu/miu
+  671  git branch
+  672  git status
+  673  git restore .vscode/
+  674  clear
+  675  git status
+  676  git reset --hard
+  677  git status
+  678  git reset --hard origin/miu
+  679  git status
+  680  git pull --rebase
+  681  git pull
+  682  ls
+  683  cd bin/
+  684  ls
+  685  cd mi
+  686  cd miu/
+  687  ls
+  688  cd ../..
+  689  ls
+  690  clear
+  691  git branch
+  692  cd ../..
+  693  ls
+  694  cd ..
+  695  ls
+  696  cd qia_2
+  697  ls
+  698  git clone --single-branch --branch miu git@gitlab.cvib.ucla.edu:qia/qia.git
+  699  git --help
+  700  git help -a
+  701  clear
+  702  git clone --branch miu git@gitlab.cvib.ucla.edu:qia/qia.git
+  703  git clone git@gitlab.cvib.ucla.edu:qia/qia.git --branch miu --single-branch
+  704  git status
+  705  cd..
+  706  cd ..
+  707  ls
+  708  mkdir simplemind
+  709  ls
+  710  cd simplemind
+  711  ls
+  712  git clone https://gitlab.com/sm-ai-team/simplemind.git
+  713  ls
+  714  cd simplemind
+  715  ls
+  716  docker build -t sm_release:latest
+  717  docker build -t sm_release:latest .
+  718  docker run -it -u $(id -u):$(id -g) -v $PWD:/workdir -w /workdir sm_release:latest bash
+  719  cd ../..
+  720  ls
+  721  cd simplemind
+  722  ls
+  723  python -c "import simplemind; print(simplemind.__version__)"
+  724  docker run -it -u $(id -u):$(id -g) -v $PWD:/workdir -w /workdir sm_release:latest bash
+  725  ls
+  726  pwd
+  727  docker run -it -u $(id -u):$(id -g) -v $PWD:/workdir -w /workdir sm_release:latest bash
+  728  git clone git@gitlab.cvib.ucla.edu:infrastructure/data-service.git DATA_SERVICE/latest
+  729  git clone git@gitlab.cvib.ucla.edu:qia/pcl.git PCL/dev
+  730  git clone git@gitlab.cvib.ucla.edu:qia/qia.git QIA/latest
+  731  git chekout miu
+  732  git checkout miu
+  733  git status
+  734  ls
+  735  cd QIA/latest/
+  736  git status
+  737  git checkout miu
+  738  git branch
+  739  docker run -it -u $(id -u):$(id -g) -v $PWD:/workdir -v $your_SM_home:/SM_home -v $your_required_pkg_home:/medqia -w /workdir exit
+  740  pwd
+  741  docker run -it -u $(id -u):$(id -g) -v %PWD:/docker run -it -u $(id -u):$(id -g) -v %PWD:/docker run -it -u $(id -u):$(id -g) -v %PWD:/eqit
+  742  docker run -it -u $(id -u):$(id -g) -v $PWD:/workdir -v $your_SM_home:/SM_home -v $your_required_pkg_home:/medqia -w /workdir \
+  743  cd ../..
+  744  pwd
+  745  docker run -it -u $(id -u):$(id -g) -v $PWD:/workdir -v $your_SM_home:/SM_home -v $your_required_pkg_home:/medqia -w /workdir docker run -it -u $(id -u):$(id -g) -v $PWD:/workdir -v $your_SM_home:/SM_home -v $your_required_pkg_home:/medqia -w /workdir \
+  746  docker run -it -u $(id -u):$(id -g) -v $PWD:/workdir -v $your_SM_home:/SM_home -v $your_required_pkg_home:/medqia -w /workdir \
+  747  export your_SM_home=/cvib2/apps/personal/swelland/simplemind
+  748  export your_SM_home=/cvib2/apps/personal/swelland/simplemind/QIA/latest
+  749  export your_required_pkg_home=/cvib2/apps/personal/swelland/simplemind
+  750  docker run -it -u $(id -u):$(id -g) -v $PWD:/workdir -v $your_SM_home:/SM_home -v $your_required_pkg_home:/medqia -w /workdir registry.rip.ucla.edu/deep_med:debug_file_lock bash
+  751  ls
+  752  python setup.py build -- -DPCL_INCLUDE_DIR=/medqia/PCL/dev/include
+  753  cd /SM_home
+  754  python setup.py build -- -DPCL_INCLUDE_DIR=/medqia/PCL/dev/include
+  755  docker run -it -u $(id -u):$(id -g) -v $PWD:/workdir -v $your_SM_home:/SM_home -v $your_required_pkg_home:/medqia -w /workdir registry.rip.ucla.edu/deep_med:debug_file_lock bash
+  756  cd ..
+  757  ls
+  758  cd sandbox
+  759  ls
+  760  pwd
+  761  mv /cvib2/apps/personal/swelland/lib/qia/latest/src/qia/ga/ga_ckp_unpickler.py /cvib2/apps/personal/swelland/sandbox
+  762  mv /cvib2/apps/personal/swelland/lib/qia/latest/ga/sandbox/ga_tensorboard_practice.py /cvib2/apps/personal/swelland/sandbox
+  763  docker run -it -v /cvib2/apps/personal/youngwonchoi/lib:/medqia -v /cvib2:/cvib2 -v /scratch:/scratch -v /apps:/apps -w /workdir --privileged registry.rip.ucla.edu/deep_med:latest bash
+  764  docker run -it -v /cvib2/apps/personal/youngwonchoi/lib:/medqia -v /cvib2:/cvib2 -v /scratch:/scratch -v /apps:/apps -w /workdir --privileged registry.rip.ucla.edu/deep_med:debug_file_lock bash
+  765  export my_lib_root=/cvib2/apps/personal/swelland/lib/qia
+  766  docker run -it -v $my_lib_root:/medqia -v /cvib2:/cvib2 -v /scratch:/scratch -v /apps:/apps -w /workdir --privileged registry.rip.ucla.edu/deep_med:latest bash
+  767  export my_lib_root=/cvib2/apps/personal/swelland/lib/qia/latest
+  768  docker run -it -v $my_lib_root:/medqia -v /cvib2:/cvib2 -v /scratch:/scratch -v /apps:/apps -w /workdir --privileged registry.rip.ucla.edu/deep_med:latest bash
+  769  export my_lib_root=/cvib2/apps/personal/swelland/qia_2/qia
+  770  docker run -it -v $my_lib_root:/medqia -v /cvib2:/cvib2 -v /scratch:/scratch -v /apps:/apps -w /workdir --privileged registry.rip.ucla.edu/deep_med:latest bash
+  771  docker run -it -v $my_lib_root:/medqia -v /cvib2:/cvib2 -v /scratch:/scratch -v -w /workdir --privileged registry.rip.ucla.edu/deep_med:latest bash
+  772  docker run -it -v $my_lib_root:/medqia -v /cvib2:/cvib2 -v /scratch:/scratch -w /workdir --privileged registry.rip.ucla.edu/deep_med:latest bash
+  773  export my_lib_root=/cvib2/apps/personal/swelland/qia_2/qia
+  774  docker run -it -v $my_lib_root:/medqia -v /cvib2:/cvib2 -v /scratch:/scratch -w /workdir --privileged registry.rip.ucla.edu/deep_med:latest bash
+  775  pwd
+  776  cd sandbox
+  777  ls
+  778  cd cyclegan
+  779  ls
+  780  cd ..
+  781  mv cyclegan gan
+  782  ls
+  783  cd gan
+  784  ls
+  785  cd ..
+  786  cd gan
+  787  ls
+  788  mkdir kidney_contrast_synth
+  789  ls
+  790  cd kidney_contrast_synth
+  791  ls
+  792  docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  793  cd ..
+  794  ls
+  795  docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  796  cd /cvib2/apps/personal/gabriel/feedback_loop_stuff/mr_reverso_3000/vgg19.py
+  797  /cvib2/apps/personal/gabriel/feedback_loop_stuff/mr_reverso_3000/vgg19.py
+  798  docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  799  /cvib2/apps/personal/gabriel/feedback_loop_stuff/mr_reverso_3000/vgg19.py
+  800  cd /cvib2/apps/personal/gabriel/feedback_loop_stuff/mr_reverso_3000
+  801  ls
+  802  cd /cvib2/apps/personal/swelland/sandbox
+  803  docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  804  cd sandbox
+  805  cd gan
+  806  mkdr pangyu_gan
+  807  mkdir cyclegan
+  808  git clone https://github.com/pangyuteng/cyclegan-ct-abdomen.git
+  809  bash build.sh
+  810  # python download.py sample.csv /mydata/raw
+  811  python download.py sample.csv /mydata/raw
+  812  cd download
+  813  cd cyclegan-ct-abdomen
+  814  ls
+  815  cd download
+  816  python download.py sample.csv /mydata/raw
+  817  docker build -t cyclegan-ct-abdomen .
+  818  cd ..
+  819  docker build -t cyclegan-ct-abdomen .
+  820  cd download
+  821  python download.py sample.csv /mydata/raw
+  822  cd ..
+  823  cd prepare
+  824  python prepare.py /mydata/c4kc-kits
+  825  cd
+  826  cd /cvib2/apps/personal/swelland/sandbox/gan/cyclegan-ct-abdomen
+  827  ls
+  828  python Dockerfile
+  829  Dockerfile
+  830  cd python
+  831  cd prepare
+  832  python prepare.py /mydata/c4kc-kits
+  833  FROM tensorflow/tensorflow:2.6.0-gpu-jupyter
+  834  python
+  835  conda activate deep
+  836  conda activate deep_med
+  837  python
+  838  docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  839  screen -S frankenstein_gan
+  840  screen -x frankenstein_gan 
+  841  screen -x frankenstein_gan
+  842  docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  843  python /cvib2/apps/personal/swelland/sandbox/gan/kidney_contrast_synth/loss_list_test.py
+  844  screen -S frankenstein_gan
+  845  screen -x frankenstein_gan
+  846  screen [-d] -r [1765042.]tty.host
+  847  screen [-d] -r 1765042.frankenstein_gan
+  848  screen -x 1765042.frankenstein_gan
+  849  screen -x 616308.frankenstein_gan
+  850  CD sandbox/gan
+  851  conda activate base
+  852  cd sandbox/gan
+  853  git clone https://github.com/xhujoy/CycleGAN-tensorflow
+  854  cd CycleGAN-tensorflow
+  855  git pull
+  856  cd ..
+  857  git clone https://github.com/patrick-mcclure/CycleGAN3D.git
+  858  cd /cvib2/apps/personal/swelland/sandbox/gan/CycleGAN3D
+  859  docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  860  cd /cvib2/apps/personal/swelland/sandbox/gan/CycleGAN-tensorflow
+  861  git pull https://github.com/xiaowei-hu/CycleGAN-tensorflow.git
+  862  git clone https://github.com/xiaowei-hu/CycleGAN-tensorflow.git
+  863  CUDA_VISIBLE_DEVICES=0 python /cvib2/apps/personal/swelland/sandbox/gan/CycleGAN-tensorflow/CycleGAN-tensorflow/main.py --datase_dir=/cvib2/apps/personal/swelland/sandbox/gan/CycleGAN3D/datasets/horse2zebra
+  864  docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  865  cd /radraid/apps/personal/gabriel/10024/10024-0001/image/1.3.12.2.1107.5.1.4.50205.30000005091614335262500006909_0/1.3.12.2.1107.5.1.4.50205.30000005091614335262500006909_0/10024-0001/2005-09-16
+  866  ls
+  867  d
+  868  cd
+  869  cd V
+  870  cd /cvib2/apps/personal/swelland/sandbox/gan
+  871  git clone https://github.com/jwc-rad/pix2pix3D-CT.git
+  872  docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  873  cd gan/cyclegan-ct-abdomen
+  874  cd sandbox/gan/cycle-gan-abdomen
+  875  cd sandbox
+  876  cd gan
+  877  ls
+  878  cd cyclegan-ct-abdomen
+  879  cd model-0
+  880  CD .. ..
+  881  CD ..
+  882  CD /..
+  883  CD ..
+  884  docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  885  cd /cvib2/apps/personal/swelland/sandbox/gan/nn/cyclegan-ct-abdomen/model-0/log
+  886  tail -f metrics*.json
+  887  cd /cvib2/apps/personal/swelland/sandbox/gan/nn/cyclegan-ct-abdomen
+  888  bash build.sh
+  889  echo $USER
+  890  export REMOTE_URL=registry.cvib.ucla.edu/$USER:cyclegan-ct-abdomen
+  891  docker tag cyclegan-ct-abdomen $REMOTE_URL
+  892  docker push $REMOTE_URL
+  893  condor_submit submit.condor
+  894  cd model-0
+  895  condor_submit submit.condor
+  896  git diff
+  897  condor_q
+  898  condor_submit submit.condor
+  899  condor_q
+  900  condor_q --better-analyze
+  901  condor_q
+  902  cd /radraid/pteng/tmp/C4KC-KiTS/KiTS-00149
+  903  ls
+  904  cd -
+  905  condor_submit submit.condor
+  906  condor_q
+  907  tensorboard --bind_all --logdir=log
+  908  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6006:6006 cyclegan-ct-abdomen bash
+  909  cd /cvib2/apps/personal/gabriel/reg/data.csv
+  910  cat /cvib2/apps/personal/gabriel/reg/data.csv
+  911  python docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  912  docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  913  cd gan/cyclegan-ct-abdomen
+  914  cd gan
+  915  cd sandbox/gan/cyclegan-ct-abdomen
+  916  bash
+  917  bash build.sh
+  918  git pull
+  919  cd ..
+  920  git clone git@gitlab.cvib.ucla.edu:pangyuteng/nn.git
+  921  cd nn/cyclegan-ct-abdomen
+  922  bash build.sh
+  923  export REMOTE_URL=registry.cvib.ucla.edu/$USER:cyclegan-ct-abdomen
+  924  docker tag cyclegan-ct-abdomen $REMOTE_URL
+  925  docker push $REMOTE_URL
+  926  cd
+  927  cd /radraid/pteng/tmp/C4KC-KiTS/KiTS-00070/09-26-1999-NA-abdomenw-21220/2.000000-arterial-95451
+  928  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6006:6006 cyclegan-ct-abdomen bash
+  929  cd docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  930  docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  931  cd /cvib2/apps/personal/swelland/sandbox/gan/nn/cyclegan-ct-abdomen
+  932  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6006:6006 cyclegan-ct-abdomen bash
+  933  docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  934  cd model-0
+  935  condor_submit submit.condor
+  936  condor_q
+  937  condor_q --better-analyze
+  938  condor_q
+  939  condor_q --better-analyze
+  940  condor_q
+  941  condor q
+  942  condor-q
+  943  condor_q
+  944  condor_q --beter-analyze
+  945  condor_q
+  946  condor_q --better-analyze
+  947  condor_remove swelland
+  948  condor_rm swelland
+  949  condor_submit submit.condor
+  950  condor_q
+  951  condor_q --better-analyze
+  952  condor_q
+  953  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6006:6006 cyclegan-ct-abdomen bash
+  954  cd ../..
+  955  cd cyclegan-ct-abdomen
+  956  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6006:6006 cyclegan-ct-abdomen bash
+  957  cd model-0
+  958  export REMOTE_URL=registry.cvib.ucla/swelland:cyclegan-ct-abdomen
+  959  docker tag cyclegan-ct-abdomen $REMOTE_URL
+  960  docker push $REMOTE_URL
+  961  export REMOTE_URL=registry.cvib.ucla/swelland:cyclegan-ct-abdomen/model-0
+  962  docker tag cyclegan-ct-abdomen $REMOTE_URL
+  963  export REMOTE_URL=registry.cvib.ucla/swelland:cyclegan-ct-abdomen
+  964  export REMOTE_URL=registry.cvib.ucla.edu/swelland:cyclegan-ct-abdomen
+  965  screen -S tb6006
+  966  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6006:6006 cyclegan-ct-abdomen bash
+  967  screen -x tb6006
+  968  condor_q
+  969  condor_rm swelland
+  970  condor_q
+  971  condor_rm swelland
+  972  condor_q
+  973  cd sandbox
+  974  cd gan
+  975  cd nn
+  976  cd cyclegan-ct-abdomen
+  977  cd images
+  978  cd model-0
+  979  cd images
+  980  ls
+  981  cd ../../..
+  982  docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  983  cd /cvib2/apps/personal/swelland/sandbox/gan/nn/cyclegan-ct-abdomen
+  984  tensorboard --bind_all --logdir=log
+  985  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6006:6006 cyclegan-ct-abdomen bash
+  986  export tb_port=6006
+  987  docker run -it -p $tb_port:$tb_port  -v /cvib2/apps/personal/youngwonchoi/lib:/medqia -v /cvib2:/cvib2 -v /scratch:/scratch -v /radraid:/radraid -w /workdir --privileged registry.rip.ucla.edu/medqia:latest bash
+  988  docker run --mount type=bind,source=/radraid,target=/radraid --mount type=bind,source=/cvib2,target=/cvib2 --mount type=bind,source=/scratch,target=/scratch --mount type=bind,source=/scratch2,target=/scratch2 --mount type=bind,source=/dingo_data,target=/dingo_data --mount type=bind,source=/cvib,target=/cvib -it registry.rip.ucla.edu/deep_med /bin/bash
+  989  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6006:6006 cyclegan-ct-abdomen bash
+  990  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6007:6007 cyclegan-ct-abdomen bash
+  991  export tb_port=9050
+  992  docker run -it -p $tb_port:$tb_port  -v /cvib2/apps/personal/youngwonchoi/lib:/medqia -v /cvib2:/cvib2 -v /scratch:/scratch -v /radraid:/radraid -w /workdir --privileged registry.rip.ucla.edu/medqia:latest bash
+  993  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6006:6006 cyclegan-ct-abdomen bash
+  994  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6007:6007 cyclegan-ct-abdomen bash
+  995  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6006:6007 cyclegan-ct-abdomen bash
+  996  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6006:6008 cyclegan-ct-abdomen bash
+  997  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6007:6006 cyclegan-ct-abdomen bash
+  998  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6006:6006 cyclegan-ct-abdomen bash
+  999  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6007:6007 cyclegan-ct-abdomen bash
+ 1000  cd /cvib2/apps/personal/swelland/sandbox/gan/nn/cyclegan-ct-abdomen
+ 1001  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6007:6007 cyclegan-ct-abdomen bash
+ 1002  condor_submit submit.condor
+ 1003  cd /cvib2/apps/personal/swelland/sandbox/gan/nn/cyclegan-ct-abdomen
+ 1004  condor_submit submit.condor
+ 1005  cd model-0
+ 1006  condor_submit submit.condor
+ 1007  cd /cvib2/apps/personal/swelland/sandbox/gan/nn/cyclegan-ct-abdomen
+ 1008  bash build.sh
+ 1009  export REMOTE_URL=registry.cvib.ucla.edu/$USER:cyclegan-ct-abdomen
+ 1010  docker tag cyclegan-ct-abdomen $REMOTE_URL
+ 1011  docker push $REMOTE_URL
+ 1012  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6008:6008 cyclegan-ct-abdomen bash
+ 1013  cd ../../..
+ 1014  cd /radraid
+ 1015  ls
+ 1016  cd swelland
+ 1017  ls
+ 1018  mkdir images
+ 1019  ls
+ 1020  /cvib2/apps/personal/swelland/sandbox
+ 1021  cd /cvib2/apps/personal/swelland/sandbox/gan/nn/cyclegan-ct-abdomen
+ 1022  cd download
+ 1023  ls
+ 1024  cd manifest-1649456823659
+ 1025  ls
+ 1026  mv DRO-Toolkit /radraid/swelland/images
+ 1027  cd /radraid/swelland
+ 1028  ls
+ 1029  cd images
+ 1030  ls
+ 1031  cd /cvib2/apps/personal/swelland/sandbox/gan/nn/cyclegan-ct-abdomen/
+ 1032  ls
+ 1033  cd prepare
+ 1034  python prepare.py /radraid/swelland/images/DRO-Toolkit
+ 1035  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6008:6008 cyclegan-ct-abdomen bash
+ 1036  cd ..
+ 1037  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6008:6008 cyclegan-ct-abdomen bash
+ 1038  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6007:6007 cyclegan-ct-abdomen bash
+ 1039  >>> df = pd.DataFrame({"body": ["ball", "red BALL", "round sphere"]})
+ 1040  python
+ 1041  pip install pandas
+ 1042  python
+ 1043  docker run -it -v $PWD:/workdir -w /workdir -v /radraid:/radraid -u $(id -u):$(id -g) -p 6008:6008 cyclegan-ct-abdomen bash
+ 1044  cd /cvib2/apps/personal/swelland/sandbox/gan/nn/cyclegan-ct-abdomen/model-0/log
+ 1045  cd ..
+ 1046  rm -rf log
+ 1047  condor_q
+ 1048  docker ps
+ 1049  rm -rf log
+ 1050  rm joblog/*
+ 1051  nvidia -smi
+ 1052  nvidia-smi
+ 1053  condor_submit submit.condor
+ 1054  condor_q
+ 1055  condor_rm swelland
+ 1056  condor_submit submit.condor
+ 1057  condor_q
+ 1058  condor_submit submit.condor
+ 1059  condor_q
+ 1060  cd /cvib2/apps/personal/gabriel/reg/
+ 1061  ls
+ 1062  cd /radraid/apps/personal/gabriel/10024/
+ 1063  ls
+ 1064  cd 10024-0001
+ 1065  ls
+ 1066  cd image
+ 1067  ls
+ 1068  cd 1.3.12.2.1107.5.1.4.50205.30000005091614335262500006909_0
+ 1069  ls
+ 1070  cd 1.3.12.2.1107.5.1.4.50205.30000005091614335262500006909_0
+ 1071  ls
+ 1072  cd 10024-0001
+ 1073  ls
+ 1074  cd 2005-09-16
+ 1075  ls
+ 1076  cd /cvib2/apps/personal/swelland/sandbox/gan/nn/cyclegan-ct-abdomen
+ 1077  cp -r /cvib2/apps/personal/swelland/sandbox/gan/nn/cyclegan-ct-abdomen /cvib2/apps/personal/swelland/sandbox/gan
+ 1078  cd /radraid
+ 1079  ls
+ 1080  cd swelland
+ 1081  ls
+ 1082  cd images
+ 1083  ls
+ 1084  cd DRO-Toolkit
+ 1085  ls
+ 1086  cd Phantom-100.0-1.0-1.0-1.0-9.0-0.0-100.0-10.0-50.0-0.0
+ 1087  ls
+ 1088  cd 10-09-2009-NA-NA-66872
+ 1089  ls
+ 1090  cd 6.000000-NA-41922
+ 1091  ls
+ 1092  cd /radraid/apps/personal/gabriel/10024/10024-0001/image/1.3.12.2.1107.5.1.4.50205.30000005091614335262500006909_0/image.seri
+ 1093  cd /radraid/apps/personal/gabriel/10024/10024-0001/image
+ 1094  ls
+ 1095  cd 1.3.12.2.1107.5.1.4.50205.30000005091614335262500006909_0
+ 1096  ls
+ 1097  cd /cvib2/apps/personal/swelland/sandbox/gan
+ 1098  ls
+ 1099  cd cyclegan-ct-abdomen
+ 1100  ls
+ 1101  cd ../../..
+ 1102  git config
+ 1103  git config -l
+ 1104  git config --global user.name Spencer Welland
+ 1105  git config -l
+ 1106  git config --list
+ 1107  git config --global --replace-all user.name "Spencer Welland"
+ 1108  git config --list
+ 1109  git config --global user.name "swelland"
+ 1110  git config --list
+ 1111  git config --global core.editor "nano-w"
+ 1112  git config -l
+ 1113  pwd
+ 1114  git init
+ 1115  ls
+ 1116  git status
+ 1117  ls -a
+ 1118  rm -r .git
+ 1119  ls -a
+ 1120  pwd
+ 1121  cd sandbox
+ 1122  ls
+ 1123  cd gan
+ 1124  ls
+ 1125  cd cyclegan-ct-abdomen/
+ 1126  ls
+ 1127  cd ..
+ 1128  ls
+ 1129  git init
+ 1130  git status
+ 1131  git remote add origin git@github.com:swelland6626/gan.git
+ 1132  git remote -v
+ 1133  ls -al ~/ssh
+ 1134  ls -al ~/.ssh
+ 1135  ls
+ 1136  git status
+ 1137  touch .gitignore
+ 1138  nano .gitignore
+ 1139  git status
+ 1140  nano .gitignore
+ 1141  fg
+ 1142  nano .gitignore
+ 1143  git status
+ 1144  git remote -v
+ 1145  git add .gitignore
+ 1146  git status
+ 1147  nano .gitignore
+ 1148  git status
+ 1149  git add .gitignore cyclegan-ct-abdomen/
+ 1150  git satus
+ 1151  git status
+ 1152  git commit -m "Added .gitignore and cyclegan-ct-abdomen directory"
+ 1153  git push
+ 1154  git config --global init.defaultBranch main
+ 1155  git config -l
+ 1156  git status
+ 1157  git push
+ 1158  git push --set-upstream origin main
+ 1159  git config --global init.defaultBranch master
+ 1160  git config -l
+ 1161  git status
+ 1162  git push --set-upstream origin master
+ 1163  ls -al ~/.ssh
+ 1164  git config -l
+ 1165  ssh-keygen -t ed25519 -C "swelland@mednet.ucla.edu"
+ 1166  ls -al ~/.ssh
+ 1167  ssh -T git@github.com
+ 1168  cat ~/.ssh/id_ed25519.pub
+ 1169  ssh -T git@github.com
+ 1170  git status
+ 1171  git push
+ 1172  git push origin master
+ 1173  ls
+ 1174  git config -l
+ 1175  git config --global init.defaultBranch main
+ 1176  git push origin main
+ 1177  git branch
+ 1178  git branch -a
+ 1179  git config --global init.defaultBranch main
+ 1180  git branch -a
+ 1181  git branch -d master
+ 1182  git branch -d main
+ 1183  git branch
+ 1184  cd ..
+ 1185  git branch
+ 1186  cd gan
+ 1187  git push origin main
+ 1188  git push origin master
+ 1189  git branch
+ 1190  git branch -av
+ 1191  ls -a
+ 1192  rm -r .git
+ 1193  git config --global init.defaultBranch master
+ 1194  git fetch
+ 1195  ls
+ 1196  git branch
+ 1197  git fetch origin main
+ 1198  git branch
+ 1199  git fetch origin master
+ 1200  git branch
+ 1201  git branch -av
+ 1202  git branch -d master
+ 1203  git checkout main
+ 1204  git branch -av
+ 1205  git branch -d master
+ 1206  git branch -D master
+ 1207  git branch
+ 1208  git push origin main
+ 1209  git status
+ 1210  cd /cvib2/apps/personal/swelland/sandbox/gan/cyclegan-ct-abdomen
+ 1211  ls
+ 1212  git pull origin master
+ 1213  ls
+ 1214  cd ..
+ 1215  ls
+ 1216  cd /cvib2/apps/personal/swelland/sandbox/gan/cyclegan-ct-abdomen
+ 1217  cd nn
+ 1218  cd ..
+ 1219  cp -r /cvib2/apps/personal/swelland/sandbox/gan/nn/cyclegan-ct-abdomen /cvib2/apps/personal/swelland/sandbox/gan
+ 1220  git status
+ 1221  ls -a
+ 1222  rm -r .git
+ 1223  cd .git
+ 1224  ls
+ 1225  cd ..
+ 1226  cd .git/objects/fb
+ 1227  ls
+ 1228  rm -r e4fbfe2cc546c571be0dfddd76f5bcaa4f44ee
+ 1229  cd ../..
+ 1230  cd ..
+ 1231  rm -r .git
+ 1232  cd gan
+ 1233  cd sandbox
+ 1234  cd gan
+ 1235  ls -a
+ 1236  rm -r .git
+ 1237  cd .git/objects/fb
+ 1238  ls
+ 1239  rm e4fbfe2cc546c571be0dfddd76f5bcaa4f44ee
+ 1240  ls
+ 1241  cd ../../..
+ 1242  rm -rf .git
+ 1243  ls -a
+ 1244  git status
+ 1245  git init
+ 1246  git config -l
+ 1247  git config --global defaultBranch "main"
+ 1248  git config --global init.defaultBranch "main"
+ 1249  git config -l
+ 1250  ls -al ~/.ssh
+ 1251  git config
+ 1252  git remote add origin git@github.com:swelland6626/gan.git
+ 1253  git remote -v
+ 1254  ls
+ 1255  ls -a
+ 1256  touch .gitignore
+ 1257  git status
+ 1258  nano .gitignore
+ 1259  git config -l
+ 1260  git status
+ 1261  git add .gitignore README.md cyclegan-ct-abdomen/
+ 1262  git status
+ 1263  git push origin main
+ 1264  git branch
+ 1265  git commit -m "Commited README, .gitignore, and cyclegan-ct-abdomen dir"
+ 1266  git push origin main
+ 1267  git branch
+ 1268  git config -l
+ 1269  rm -rf .git
+ 1270  git status
+ 1271  git init
+ 1272  git status
+ 1273  git branch
+ 1274  git remote add origin git@github.com:swelland6626/gan.git
+ 1275  git remote -v
+ 1276  git branch
+ 1277  git status
+ 1278  git config -l
+ 1279  git add .gitignore README.md cyclegan-ct-abdomen/
+ 1280  git status
+ 1281  git commit -m "Added .gitignore, README, and cyclegan-ct-abdomen directory"
+ 1282  git status
+ 1283  git remote -v
+ 1284  git push origin main
+ 1285  git branch
+ 1286  git branch -av
+ 1287  git branch -r
+ 1288  git checkout main
+ 1289  git pull origin main
+ 1290  git branch -av
+ 1291  git status
+ 1292  git reset HEAD
+ 1293  git status
+ 1294  git reset HEAD -- .
+ 1295  git status
+ 1296  git branch -av
+ 1297  git reset HEAD -- .gitignore
+ 1298  git status
+ 1299  git branch -av
+ 1300  rm -r .git
+ 1301  rm -rf .git
+ 1302  ls -a
+ 1303  git init
+ 1304  git status
+ 1305  git branch
+ 1306  git config -l
+ 1307  git config --global init.defaultBranch "main"
+ 1308  git remote add origin git@github.com:swelland6626/gan.git
+ 1309  git branch
+ 1310  git remote -v
+ 1311  git branch
+ 1312  git status
+ 1313  git branch
+ 1314  git pull origin main
+ 1315  git branch
+ 1316  git status
+ 1317  git pull origin master
+ 1318  git branch
+ 1319  branch -av
+ 1320  git branch -av
+ 1321  git checkout main
+ 1322  rm -r README.md 
+ 1323  git checkout main
+ 1324  git branch
+ 1325  git status
+ 1326  git branch
+ 1327  git add .gitignore cyclegan-ct-abdomen/
+ 1328  git status
+ 1329  git commit -m "Added .gitignore and cyclegan-ct-abdomen directory"
+ 1330  git push origin main
+ 1331  git pull origin main
+ 1332  ls
+ 1333  git status
+ 1334  git pull origin main
+ 1335  ls
+ 1336  touch README.md
+ 1337  nano README.md 
+ 1338  fg
+ 1339  git status
+ 1340  git add README.md
+ 1341  git commit -m "Added README"
+ 1342  git push origin main
+ 1343  git status
+ 1344  git diff
+ 1345  git add README.md 
+ 1346  git status
+ 1347  git diff
+ 1348  cit add cyclegan-ct-abdomen/README.md 
+ 1349  git status
+ 1350  cd gan
+ 1351  cd sandbox/gan
+ 1352  git status
+ 1353  cd cyclegan-ct-abdomen/
+ 1354  git status
+ 1355  git add README.md 
+ 1356  git status
+ 1357  git commit -m "Updated cyclegan-ct-abdomen README.md"
+ 1358  git push origin main
+ 1359  history > output.txt

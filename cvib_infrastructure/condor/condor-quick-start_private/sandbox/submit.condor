@@ -1,0 +1,37 @@
+# condor submit file here
+# path to example in git: /condor-quick-start/docker_example/mnist_ex.py
+
+# path in condor submit file needs to be /sandbox/mnist_ex.py
+
+universe = docker
+
+# specify the image from CVIB registry since the universe is is docker
+docker_image = registry.cvib.ucla.edu/{{username}}:condor-quick-start
+
+executable = run.sh
+
+# transfer files to and from the remote machine where the job runs
+should_transfer_files = YES
+transfer_input_files = run.sh
+
+# tells condor which GPU cluster(s) you want to run on
+requirements = (Machine  == "REDLRADADM14958.ad.medctr.ucla.edu" ||  Machine  == "REDLRADADM14959.ad.medctr.ucla.edu" )
+
+# ON_EXIT transfers job's output files back to the machine when the job completes and exits automatically
+when_to_transfer_output = ON_EXIT
+
+# For logging meta data, use $(process) for Numbered files
+output = joblog/job.$(cluster).$(process).out
+error = joblog/job.$(cluster).$(process).err
+log = joblog/job.$(cluster).$(process).log
+
+# prior to submitting jobs, if you specified a log directory in the submit script,
+# remember to create the directory first, or job will forever be at idle
+
+request_cpus = 1
+request_gpus = 1
+request_memory = 1GB
+request_disk = 500MB
+
+arguments = "hello world"
+queue
