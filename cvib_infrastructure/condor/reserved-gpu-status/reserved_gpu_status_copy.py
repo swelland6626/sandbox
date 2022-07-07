@@ -135,15 +135,13 @@ for job in jobs:
 
 job_list = []
 no_gpu_list = []
-idx = 0
 
-for i in dict_list:
+for idx, value in enumerate(dict_list):
     if dict_list[idx]["req_gpu"]:
-        job_list.append(i)
-        idx += 1
+        job_list.append(value)
+
     else:
-        no_gpu_list.append(i)
-        idx += 1
+        no_gpu_list.append(value)
 
 
 print()
@@ -157,13 +155,31 @@ print()
 gpus_sorted = sorted(job_list, key=lambda x: (x["machine"], x["core"]))
 
 idx = 0
+next_idx = 1
 for i in gpus_sorted:
     core = gpus_sorted[idx]["core"]
     machine = gpus_sorted[idx]["machine"]
     owner = gpus_sorted[idx]["owner"]
     cluster_id = gpus_sorted[idx]["cluster_id"]
 
-    print(f"[{core}], {machine}, {owner}, {cluster_id}")
-    idx += 1
+    length = len(gpus_sorted)
+
+    if next_idx < length:
+        next_machine = gpus_sorted[next_idx]["machine"]
+
+        if machine != next_machine:
+            print(f"[{core}], {machine}, {owner}, {cluster_id}\n")
+
+        else:
+            print(f"[{core}], {machine}, {owner}, {cluster_id}")
+
+        idx += 1
+        next_idx += 1
+
+    elif next_idx == length:
+        print(f"[{core}], {machine}, {owner}, {cluster_id}")
+
+    else:
+        break
 
 print()
